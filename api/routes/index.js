@@ -24,6 +24,5 @@ router
 router
     .route('/hotels/:hotelId/reviews/:reviewId')
     .get(ctrlReviews.reviewsGetOne);
-//test
 
 module.exports = router;
