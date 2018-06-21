@@ -11,7 +11,7 @@ var reviewSchema = new mongoose.Schema({
         max: 5,
         required: true
     },
-    review: {
+    reviews: {
         type: String,
         required: true
     },
@@ -45,7 +45,7 @@ var hotelSchema = new mongoose.Schema({
     description: String,
     photos: [String],
     currency: String,
-    review: [reviewSchema],
+    reviews: [reviewSchema],
     rooms: [roomSchema],
     location: {
         address: String,
