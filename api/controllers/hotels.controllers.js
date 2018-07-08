@@ -31,6 +31,7 @@ var runGeoQuery = function(req, res){
 };
 
 module.exports.hotelsGetAll = function(req, res){
+    console.log("Request by: " + req.user)
     var offset = 0;
     var count = 5;
     var maxCount = 10;
@@ -65,6 +66,7 @@ module.exports.hotelsGetAll = function(req, res){
 
         return;
     }
+
 
     Hotel
         .find()

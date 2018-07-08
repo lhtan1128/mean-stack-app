@@ -40,12 +40,11 @@ var _addReview = function(req, res, hotel){
     hotel.reviews.push({
         name: req.body.name,
         rating: parseInt(req.body.rating, 10),
-        reviews: req.body.review
+        review: req.body.review
     });
 
     hotel.save(function(err, hotelUpdated){
         if(err){
-            console.log("AAAAAAAAAAAAAAAAAA",err)
             res
                 .status(500)
                 .json(err);

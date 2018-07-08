@@ -11,7 +11,7 @@ var reviewSchema = new mongoose.Schema({
         max: 5,
         required: true
     },
-    reviews: {
+    review: {
         type: String,
         required: true
     },
