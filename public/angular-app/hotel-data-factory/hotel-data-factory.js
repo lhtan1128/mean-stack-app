@@ -16,8 +16,6 @@ function hotelDataFactory($http){
     }
 
     function postReview(id, review){
-        console.log("11111111111111",id);
-        console.log("22222222222222",review);
         return $http.post('/api/hotels/' + id + '/reviews', review).then(complete).catch(failed);
     }
 
